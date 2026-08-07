@@ -1,0 +1,61 @@
+# Operating systems and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python bytecode and build artifacts
+__pycache__/
+*.py[codz]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+wheels/
+
+# Virtual environments and local environment files
+.env
+.env.*
+!.env.example
+.venv/
+env/
+venv/
+
+# Test, lint, type-check, and notebook caches
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# Logs and local job state
+*.log
+logs/
+*.pid
+
+# Large or generated project artifacts
+checkpoints/*
+!checkpoints/README.md
+data/*
+!data/README.md
+outputs/*
+!outputs/README.md
+
+# Common model and array formats
+*.ckpt
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+
+# Credentials and local overrides
+credentials/
+secrets/
+configs/local/

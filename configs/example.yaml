@@ -1,0 +1,8 @@
+# Replace this file with project-specific, versioned configuration.
+experiment:
+  name: example
+  seed: 42
+
+runtime:
+  device: cpu
+  output_directory: outputs/example

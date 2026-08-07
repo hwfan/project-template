@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-template"
+version = "0.1.0"
+description = "A reusable Python research project template."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "YOUR_NAME" },
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+project-name = "project_name.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["project_name*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
